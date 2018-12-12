@@ -8,7 +8,5 @@ class SuppliersUploadService < BaseUploadService
 
       Supplier.import suppliers_array, on_duplicate_key_update: { conflict_target: [:code], columns: [:name] }
     end
-
-    true
   end
 end

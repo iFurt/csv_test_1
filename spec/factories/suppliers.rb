@@ -1,6 +1,8 @@
 FactoryBot.define do
   factory :supplier do
-    sequence :code { |n| 's' + "%04d" % n }
+    sequence :code do |n|
+      's' + "%04d" % n
+    end
     name 'Some name'
   end
 end

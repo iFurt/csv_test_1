@@ -1,6 +1,8 @@
 FactoryBot.define do
   factory :sku do
-    sequence :outer_id { |n| "%08d" % n }
+    sequence :outer_id do |n|
+      "%08d" % n
+    end
     supplier
     field_1 'field one'
     field_2 'field two'

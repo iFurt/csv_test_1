@@ -10,7 +10,5 @@ class SkuUploadService < BaseUploadService
       Sku.import skus_array, on_duplicate_key_update: { conflict_target: [:outer_id],
         columns: [:supplier_code, :field_1, :field_2, :field_3, :field_4, :field_5, :field_6, :price] }
     end
-
-    true
   end
 end

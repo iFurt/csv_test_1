@@ -13,3 +13,5 @@ Test app to cover such features:
 * Display parsing results in a table
 
 * Sample source import data (contents and format) could be found in specs
+
+* Import is performed in parallel with UPSERT to psql DB
