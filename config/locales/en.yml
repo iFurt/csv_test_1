@@ -30,4 +30,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  filename_is_invalid: Invlid filename and/or extension
+  upload_success: 'File import queued'
+  upload_failed: 'File upload failed: %{errors}'
+  welcome:
+    index:
+      upload_head: Upload your files here
+      upload_descr_html: 'You are allowed to upload *.CSV files only. Please verify the file name: it should be either <b>suppliers</b> or <b>sku</b>'
+      submit_btn: Upload!
+  shared:
+    skus_table:
+      caption: List of SKUs
+      no_records_found: No SKUs to show yet...

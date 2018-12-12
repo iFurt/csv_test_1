@@ -1,0 +1,16 @@
+<div class="jumbotron">
+  <h1 class="display-4"><%= t('.upload_head') %></h1>
+  <p class="lead"><%= t('.upload_descr_html') %></p>
+
+  <hr class="my-4">
+
+  <%= form_tag :upload, method: :post, multipart: true do %>
+    <div class="form-group">
+      <%= file_field_tag :csv_file, accept: 'text/csv' %>
+    </div>
+
+    <%= submit_tag t('.submit_btn'), class: 'btn btn-primary' %>
+  <% end %>
+</div>
+
+<%= render 'shared/skus_table', skus: @skus %>
