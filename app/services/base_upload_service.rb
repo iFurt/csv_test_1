@@ -17,7 +17,7 @@ class BaseUploadService
     begin
       csv_upsert
     ensure
-      File.delete(csv_file_path)
+      File.delete(csv_file_path) if File.exist?(csv_file_path)
     end
   end
 
