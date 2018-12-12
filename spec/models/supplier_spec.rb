@@ -1,5 +1,5 @@
 require 'rails_helper'
 
 RSpec.describe Supplier, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should have_many(:skus).with_foreign_key('supplier_code').with_primary_key('code') }
 end
