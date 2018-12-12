@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Test app to cover such features:
 
-Things you may want to cover:
+* Upload two sorts of CSV files: one for suppliers and another for its services
 
-* Ruby version
+* Parse CSV files and find or create DB entities with parsed data in background
 
-* System dependencies
+* Parsing strategy should be performed based on file name
 
-* Configuration
+* Use non-default foreign and primary keys to bind suppliers and services
 
-* Database creation
+* Display parsing results in a table
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Sample source import data (contents and format) could be found in specs
